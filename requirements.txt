@@ -1,0 +1,7 @@
+torch
+numpy
+tiktoken
+datasets
+tensorboard
+tqdm
+loguru
