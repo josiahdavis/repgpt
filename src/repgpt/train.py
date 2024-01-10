@@ -1,3 +1,8 @@
+"""
+References: 
+Andrej Karpathy's training code: https://github.com/karpathy/nanoGPT/blob/master/train.py
+"""
+
 import argparse
 from datetime import datetime
 import os
@@ -36,9 +41,9 @@ if __name__ == "__main__":
     start = time.time()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--max_steps", type=int, default=300, help="training steps")
-    parser.add_argument("--eval_interval", type=int, default=50, help="perform eval after this many steps")
-    parser.add_argument("--eval_steps", type=int, default=20, help="perform eval on this many steps")
+    parser.add_argument("--max_steps", type=int, default=90000, help="training steps")
+    parser.add_argument("--eval_interval", type=int, default=1000, help="perform eval after this many steps")
+    parser.add_argument("--eval_steps", type=int, default=100, help="perform eval on this many steps")
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--gradient_accum", type=int, default=32, help="n gradient accumulation steps across all devices")
     parser.add_argument("--model_size", type=str, default="124M", choices=["124M", "355M", "774M", "1.5B"])
