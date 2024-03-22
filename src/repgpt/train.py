@@ -287,7 +287,6 @@ if __name__ == "__main__":
             with ctx:
                 logits, loss = model(xb, yb)
                 loss = loss / gradient_accumulation_steps_per_gpu
-            # assert logits.dtype is torch.bfloat16, f"logits is not torch.bfloat16, it's {logits.dtype}"
             xb, yb = get_batch("train")
             loss.backward()
 
