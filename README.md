@@ -14,8 +14,9 @@ torchrun --standalone --nproc_per_node=8 train.py
 
 ## Features
 
+* PyTorch 2.1 which supports model compilation and flash attention
 * Automatic Mixed Precision (AMP) using BFloat16.
-* Distributed Data Parallelism.
+* Distributed Data Parallelism (DDP).
 * Gradient Accumulation.
 * Logging in Tensorboard.
 
@@ -29,7 +30,7 @@ torchrun --standalone --nproc_per_node=8 train.py
 6. Implemented training engineering stuff (e.g., DDP, AMP, gradient accumulation, logging, etc...)
 7. Ran training multiple times, debugging issues including: learning rate scheduler bug, initialization issue, removing dropout, fixing gradient explosion (see below).
 
-## Training process
+## Training log
 
 1. First run: loss never got below 3. I realized I had a in the learning rate scheduler.
 2. Second run: loss never dropped below 3 again, but I realized I didn't use the paper's initialization.
@@ -43,16 +44,21 @@ torchrun --standalone --nproc_per_node=8 train.py
 
 For more details, check out my ([tweet thread](https://twitter.com/josiahjdavis/status/1686204521255432193)).
 
-## Explainers
+## Reference guides
 
 * [01_data.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/01_data.ipynb): Understanding of the data we are feeding into the model.
 * [02_attention.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/02_attention.ipynb): Gain an understanding of the attention mechanism, and reproduce PyTorch's attention function with vanilla matrix multiplication.
 * [03_loss.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/03_loss.ipynb): Explainer for cross entropy loss.
+* [04_transformer.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/04_transformer.ipynb): Standalone explainer for the full transformer architecture.
+* [05_training.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/05_training.ipynb): Notes on key concepts and implementation in training like AMP, DDP, and DDP with Gradient Accumulation.
+* [06_logging.ipynb](https://github.com/josiahdavis/repgpt/blob/main/notebooks/06_logging.ipynb): Explainer for logging.
 
+## Links
 
-## References
-
+* OpenAI GPT1: https://github.com/openai/finetune-transformer-lm/tree/master
 * OpenAI GPT2: https://github.com/openai/gpt-2
+* Sasha Rush Annotated Attention: https://nlp.seas.harvard.edu/2018/04/03/attention.html
+* Harvard NLP Attention: https://nlp.seas.harvard.edu/annotated-transformer/
 * Andrej Karpathy: https://github.com/karpathy/nanoGPT
 * HuggingFace: https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/
 * Aaron Gokaslan: https://huggingface.co/datasets/Skylion007/openwebtext
