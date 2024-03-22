@@ -67,7 +67,7 @@ No, here is a summary of my training log:
 8. Tried some light-weight hyperparameter optimization, increasing the learning rate and weight decay and got the training down to 24 hours [link](https://twitter.com/josiahjdavis/status/1722073528508223667).
 9. Did some additional experimentation, and got the training down to 12 hours, which is where I stopped [link](https://twitter.com/josiahjdavis/status/1727523774503756217).
 
-I live-tweeted my experience ([here](https://twitter.com/josiahjdavis/status/1686204521255432193)).
+I live-tweeted my experience [here](https://twitter.com/josiahjdavis/status/1686204521255432193).
 
 ### Q: What was your learning & development process?
 
