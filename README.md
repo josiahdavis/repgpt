@@ -1,6 +1,6 @@
-# Reproduce GPT2 (124M) from scratch
+# Reproduce GPT2 in half a day
 
-* Train down to ~2.85 cross entropy loss on a single 8xA100 node in 12 hours.
+* Train GPT2-124M down to ~2.85 cross entropy loss on a single 8xA100 node in 12 hours.
 * ~500 lines of code in three source files.
 
 ## How to Use
