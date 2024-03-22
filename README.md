@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 Example runtime on a single 8xA100 node.
 ```
-torchrun --standalone --nproc_per_node=8 train.py --max_steps 90000
+torchrun --standalone --nproc_per_node=8 src/repgpt/train.py --max_steps 90000
 ```
 
 ## Features
