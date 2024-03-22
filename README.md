@@ -77,4 +77,5 @@ I live-tweeted my experience [here](https://twitter.com/josiahjdavis/status/1686
 4. Reproduced the attention function from PyTorch with vanilla matrix multiplication.
 5. Created a script to poll for a p4 instance/8xA100 (~19 days 😓).
 6. Implemented training engineering stuff (e.g., DDP, AMP, gradient accumulation, logging, etc...).
-7. Ran training multiple times, debugging issues including: learning rate scheduler bug, initialization issue, removing dropout, fixing gradient explosion (see below).
+7. Ran training multiple times, debugging issues including: learning rate scheduler bug, initialization issue, removing dropout, fixing gradient explosion.
+8. After getting it working, sped up training from 6.5 days down to 12 hours.
