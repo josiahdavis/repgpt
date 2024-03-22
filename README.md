@@ -46,10 +46,10 @@ torchrun --standalone --nproc_per_node=8 src/repgpt/train.py --max_steps 90000
 * OpenAI GPT1: https://github.com/openai/finetune-transformer-lm
 * OpenAI GPT2: https://github.com/openai/gpt-2
 * Sasha Rush Annotated Attention: https://nlp.seas.harvard.edu/2018/04/03/attention.html
-* Harvard NLP Attention: https://nlp.seas.harvard.edu/annotated-transformer/
-* Andrej Karpathy: https://github.com/karpathy/nanoGPT
-* HuggingFace: https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/
-* Aaron Gokaslan: https://huggingface.co/datasets/Skylion007/openwebtext
+* Harvard NLP Annotated Attention: https://nlp.seas.harvard.edu/annotated-transformer/
+* Andrej Karpathy nanoGPT: https://github.com/karpathy/nanoGPT
+* HuggingFace gpt2: https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/
+* Aaron Gokaslan OpenWebText: https://huggingface.co/datasets/Skylion007/openwebtext
 
 ## FAQ
 
