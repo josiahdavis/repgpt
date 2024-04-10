@@ -3,6 +3,8 @@
 * Train GPT2-124M down to ~2.85 cross entropy loss on a single 8xA100 node in 12 hours.
 * ~500 lines of code in three source files.
 
+![alt text](https://github.com/josiahdavis/repgpt/blob/main/images/gpt2_12_hrs.jpeg)
+
 ## How to Use
 
 You will need access to a single node of 8xA100 (40GB memory) with CUDA drivers installed.
